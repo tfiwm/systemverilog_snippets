@@ -7,7 +7,7 @@ module test();
   always #5 clk = ~clk; 
   
   
-  //use implication operator with consequtive repeatition 
+  //use implication operator with consecutive repetition 
   property a2_myprop;
     @(posedge clk) a |=> b[*3] ;
   endproperty 
