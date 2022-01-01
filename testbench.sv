@@ -1,6 +1,7 @@
 module test();
 
     initial begin 
-        $display("hello");
+        $dumpfile("dump.vcd");
+        $dumpvars(1);
     end
 endmodule
